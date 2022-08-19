@@ -49,7 +49,23 @@ return packer.startup(function(use)
     use "kyazdani42/nvim-web-devicons"
     use "kyazdani42/nvim-tree.lua"
 
+    -- CMP (Completion Plugins)
+    use "hrsh7th/nvim-cmp"    -- The Plugin itself
+    use "hrsh7th/cmp-buffer"  -- Buffer Completions
+    use "hrsh7th/cmp-path"    -- Path completions
+    use "hrsh7th/cmp-cmdline" -- Command Line Completions
+    use "saadparwaiz1/cmp_luasnip"
     
+    -- Snippets (Along with CMP)
+    use "L3MON4D3/LuaSnip"
+    use "rafamadriz/friendly-snippets"
+
+    -- Treesitter (for syntax highlighting)
+     use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }  
+
     -- Colorschemes
     use "folke/tokyonight.nvim"
     use "lunarvim/darkplus.nvim"
