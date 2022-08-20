@@ -15,6 +15,10 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Remap Enter for Empty lines
+keymap("n", "<Enter>", "o<ESC>", opts)
+keymap("n", "<S-Enter>", "O<ESC>", opts)
+
 -- Modes
 --    normal_mode = "n"
 --    insert_mode = "i"
@@ -30,9 +34,16 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- Buffer Navigation
+keymap("n", "<S-l>", ":bnext<CR>", opts)
+keymap("n", "<S-h>", ":bprevious<CR>", opts)
+
+-- Move text up and down
+keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
+keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
+
 -- Open File Explorer
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
-
 
 -- Resize with Arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
