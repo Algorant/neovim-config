@@ -16,8 +16,8 @@ Inspired by: [SpaceVim](https://spacevim.org/) |
 #### Main Plugins: 
   - [LSP](https://github.com/neovim/nvim-lspconfig)
   - [Treesitter](https://github.com/tpope/vim-surround)
-  - [Boggleterm](https://github.com/akinsho/toggleterm.nvim)
-  - [Tufferline](https://github.com/akinsho/bufferline.nvim)
+  - [Toggleterm](https://github.com/akinsho/toggleterm.nvim)
+  - [Bufferline](https://github.com/akinsho/bufferline.nvim)
   - [Nvim-Tree](https://github.com/kyazdani42/nvim-tree.lua)
   - [cmp](https://github.com/hrsh7th/nvim-cmp)
 
