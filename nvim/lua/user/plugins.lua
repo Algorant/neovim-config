@@ -48,6 +48,7 @@ return packer.startup(function(use)
     use "tpope/vim-commentary"
     use "kyazdani42/nvim-web-devicons"
     use "kyazdani42/nvim-tree.lua"
+    use "nvim-lualine/lualine.nvim"
     use "moll/vim-bbye"
     -- CMP (Completion Plugins)
     use "hrsh7th/nvim-cmp"    -- The Plugin itself
