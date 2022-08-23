@@ -56,6 +56,7 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-path"    -- Path completions
     use "hrsh7th/cmp-cmdline" -- Command Line Completions
     use "saadparwaiz1/cmp_luasnip"
+    use "hrsh7th/cmp-nvim-lsp"
     
     -- Snippets (Along with CMP)
     use "L3MON4D3/LuaSnip"
@@ -66,6 +67,13 @@ return packer.startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }  
+
+    -- LSP 
+    use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+    }
 
     -- Colorschemes
     use "folke/tokyonight.nvim"

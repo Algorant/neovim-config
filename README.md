@@ -19,6 +19,7 @@ Inspired by: [SpaceVim](https://spacevim.org/) |
   - [Toggleterm](https://github.com/akinsho/toggleterm.nvim)
   - [Bufferline](https://github.com/akinsho/bufferline.nvim)
   - [Nvim-Tree](https://github.com/kyazdani42/nvim-tree.lua)
+  - [lualine](https://github.com/nvim-lualine/lualine.nvim)
   - [cmp](https://github.com/hrsh7th/nvim-cmp)
 
 
