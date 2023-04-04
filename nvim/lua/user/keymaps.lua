@@ -45,6 +45,8 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 -- Open File Explorer
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
+-- Save with Leader way
+keymap("n", "<leader>w", ":w<CR>", opts)
 -- Resize with Arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)

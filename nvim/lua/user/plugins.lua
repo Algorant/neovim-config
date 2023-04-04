@@ -40,6 +40,7 @@ packer.init({
 
 -- Install your plugins here
 return packer.startup(function(use)
+
     -- Put plugins here
     use "wbthomason/packer.nvim"
     use "windwp/nvim-autopairs"
@@ -50,6 +51,10 @@ return packer.startup(function(use)
     use "kyazdani42/nvim-tree.lua"
     use "nvim-lualine/lualine.nvim"
     use "moll/vim-bbye"
+    use "github/copilot.vim"
+
+
+
     -- CMP (Completion Plugins)
     use "hrsh7th/nvim-cmp"    -- The Plugin itself
     use "hrsh7th/cmp-buffer"  -- Buffer Completions
@@ -57,7 +62,7 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-cmdline" -- Command Line Completions
     use "saadparwaiz1/cmp_luasnip"
     use "hrsh7th/cmp-nvim-lsp"
-    
+
     -- Snippets (Along with CMP)
     use "L3MON4D3/LuaSnip"
     use "rafamadriz/friendly-snippets"
@@ -66,7 +71,7 @@ return packer.startup(function(use)
      use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
-    }  
+    }
 
     -- LSP 
     use {

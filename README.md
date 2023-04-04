@@ -14,6 +14,7 @@ Inspired by: [SpaceVim](https://spacevim.org/) |
 #### Plugin Manager: [Packer](https://github.com/wbthomason/packer.nvim)
 
 #### Main Plugins: 
+  - [Copilot](https://github.com/copilot)
   - [LSP](https://github.com/neovim/nvim-lspconfig)
   - [Treesitter](https://github.com/tpope/vim-surround)
   - [Toggleterm](https://github.com/akinsho/toggleterm.nvim)
