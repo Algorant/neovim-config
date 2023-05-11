@@ -52,7 +52,3 @@ keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
-
--- Telescope
-keymap("n", "<leader>f", ":Telescope find_files hidden=true<CR>", opts)
-keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)

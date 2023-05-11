@@ -53,11 +53,7 @@ return packer.startup(function(use)
     use "moll/vim-bbye"
     use "github/copilot.vim"
 
-    -- Telescope
-    use {
-        "nvim-telescope/telescope.nvim",
-        requires = {{"nvim-lua/popup.nvim"}, {"nvim-lua/plenary.nvim"}}
-    }
+
 
     -- CMP (Completion Plugins)
     use "hrsh7th/nvim-cmp"    -- The Plugin itself
