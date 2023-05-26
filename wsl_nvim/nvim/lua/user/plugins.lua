@@ -53,6 +53,12 @@ return packer.startup(function(use)
     use "moll/vim-bbye"
     use "github/copilot.vim"
 
+    -- Markdown Plugin
+    use {
+        "ellisonleao/glow.nvim",
+        config = function() require("glow").setup() end
+    }
+
     -- Telescope
     use {
         "nvim-telescope/telescope.nvim",
