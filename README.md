@@ -26,7 +26,7 @@ Inspired by: [SpaceVim](https://spacevim.org/) |
   - [lualine](https://github.com/nvim-lualine/lualine.nvim) | Status line showhing useful information
   - [cmp](https://github.com/hrsh7th/nvim-cmp) | Code completion and shortcuts integrated with LSP
   - [Mason](https://github.com/williamboman/mason.nvim) | Package manager for LSP servers, etc.
-
+  - [Glow](https://github.com/ellisonleao/glow.nvim) | Markdown previews as popup within nvim.
 #### Context Plugins:
   - [commentary](https://github.com/tpope/vim-commentary) | Easily comment and uncomment lines
   - [autopairs](https://github.com/windwp/nvim-autopairs) | Add and remove/pair brackets, parenthesis, etc
