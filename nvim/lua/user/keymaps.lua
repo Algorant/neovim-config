@@ -56,3 +56,7 @@ keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
 -- Telescope
 keymap("n", "<leader>f", ":Telescope find_files hidden=true<CR>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+
+--Copilot use ctrl+Space to trigger copilot accept
+keymap("i", 'C-Space', "copilot#Accept<CR>", opts)
+-- let g:copilot_no_tab_map = v:true

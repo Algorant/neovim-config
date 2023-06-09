@@ -40,4 +40,4 @@ Inspired by: [SpaceVim](https://spacevim.org/) |
 - Ctrl + h/l: Move between nvim-tree and buffers
 - #TODO do :Glow to open current buffer as markdown preview. Press q to close
 
-
+- Ctrl + a: Complete Copilot Suggestion
