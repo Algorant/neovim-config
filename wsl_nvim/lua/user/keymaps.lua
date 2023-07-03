@@ -18,3 +18,23 @@ vim.g.maplocalleader = " "
 -- Remap Enter for Empty lines
 keymap("n", "<Enter>", "o<ESC>", opts)
 keymap("n", "<S-Enter>", "O<ESC>", opts)
+
+
+-- Modes
+--    normal_mode = "n"
+--    insert_mode = "i"
+--    visual_mode = "v"
+--    visual_block_mode = "x"
+--    term_mode = "t"
+--    command_mode = "c"
+
+-- Normal Mode
+
+-- Better Window Navigation
+keymap("n", "<C-h>", "<C-w>h", opts)
+keymap("n", "<C-j>", "<C-w>j", opts)
+keymap("n", "<C-k>", "<C-w>k", opts)
+keymap("n", "<C-l>", "<C-w>l", opts)
+
+-- Controls for NvimTree
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
