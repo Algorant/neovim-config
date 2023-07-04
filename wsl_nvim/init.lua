@@ -9,6 +9,5 @@ require("user.nvim-tree")
 require("user.treesitter")
 require("user.toggleterm")
 require("user.telescope")
-
-
-
+require("user.lsp-zero")
+require("user.autopairs")
