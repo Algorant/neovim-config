@@ -34,8 +34,10 @@ require("lazy").setup({
 
   },
 
-  -- Treesitter
+  -- Toggleterm
+  { 'akinsho/toggleterm.nvim' },
 
+  -- Treesitter
   { "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
   },
@@ -49,7 +51,7 @@ require("lazy").setup({
 	  config = function()
 	  vim.cmd([[colorscheme gruvbox]])
 	end,
-	},
+  },
 
   -- Additional Colorschemes --
   {"folke/tokyonight.nvim"},
