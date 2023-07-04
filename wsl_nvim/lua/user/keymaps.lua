@@ -38,3 +38,8 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Controls for NvimTree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+
+-- Telescope
+-- Telescope
+keymap("n", "<leader>ff", ":Telescope find_files hidden=true<CR>", opts)
+keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)

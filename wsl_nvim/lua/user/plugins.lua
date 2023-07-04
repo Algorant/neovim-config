@@ -15,32 +15,36 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
 
 require("lazy").setup({
-  -- This is plugin by lazy dev that shows what key. Using as test for lazy -- 
+  -- Which Key? -- 
   "folke/which-key.nvim",
 
+  -- Toggleterm
+  { 'akinsho/toggleterm.nvim' },
 
   -- Lualine
   { 
-      'nvim-lualine/lualine.nvim',
-      -- Needed for icons to display in lualine
-      dependencies = { "kyazdani42/nvim-web-devicons",},
-  },
+    'nvim-lualine/lualine.nvim',
+     -- Needed for icons to display in lualine
+     dependencies = { "kyazdani42/nvim-web-devicons",},
+    },
 
   -- Nvim-Tree (Tree-like file explorer)
   {
       'nvim-tree/nvim-tree.lua',
       -- Needed for icons to display in nvim-tree
-      dependencies = { "kyazdani42/nvim-web-devicons" },
-
-  },
-
-  -- Toggleterm
-  { 'akinsho/toggleterm.nvim' },
+       dependencies = { "kyazdani42/nvim-web-devicons" },
+    },
 
   -- Treesitter
   { "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
-  },
+    },
+
+  -- Telescope
+  {
+    'nvim-telescope/telescope.nvim', tag = '0.1.2',
+      dependencies = { 'nvim-lua/plenary.nvim' }
+    },
 
   -- Colorschemes --
   -- Default to gruvbox with the extra settings --
