@@ -20,6 +20,7 @@ require("lazy").setup({
   "tpope/vim-commentary",
   "folke/which-key.nvim",
   "akinsho/toggleterm.nvim",
+  "akinsho/bufferline.nvim",
 
   -- Lualine
   { 

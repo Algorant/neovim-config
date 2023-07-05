@@ -43,3 +43,8 @@ keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 -- Telescope
 keymap("n", "<leader>ff", ":Telescope find_files hidden=true<CR>", opts)
 keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
+
+-- Buffers
+keymap("n", "<leader>q", ":bd <CR>", opts) --exit buffer
+keymap("n", "<S-l>", ":bnext<CR>", opts) -- next buffer (aka tab)
+keymap("n", "<S-h>", ":bprevious<CR>", opts) -- previous buffer (aka tab)
