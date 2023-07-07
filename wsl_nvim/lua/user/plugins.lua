@@ -15,6 +15,13 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
 
 require("lazy").setup({
+  -- Colorschemes --
+  {"morhetz/gruvbox"},
+  {"folke/tokyonight.nvim"},
+  {"lunarvim/darkplus.nvim"},
+  {"Mofiqul/dracula.nvim"},
+  {"lunarvim/colorschemes"},
+
   -- Simple Plugins --
   "windwp/nvim-autopairs",
   "tpope/vim-commentary",
@@ -23,7 +30,7 @@ require("lazy").setup({
   "akinsho/bufferline.nvim",
 
   -- Lualine
-  { 
+  {
     'nvim-lualine/lualine.nvim',
      -- Needed for icons to display in lualine
      dependencies = { "kyazdani42/nvim-web-devicons" },
@@ -37,7 +44,7 @@ require("lazy").setup({
     },
 
   -- Treesitter
-  { 
+  {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
     },
@@ -48,64 +55,19 @@ require("lazy").setup({
       dependencies = { 'nvim-lua/plenary.nvim' }
     },
 
-    -- LSP v2 using lspzero
-    {
-      'VonHeikemen/lsp-zero.nvim',
-      branch = 'v2.x',
-      dependencies = {
-        -- LSP Support
-        {'neovim/nvim-lspconfig'},             -- Required
-        {                                      -- Optional
-          'williamboman/mason.nvim',
-          build = function()
-            pcall(vim.cmd, 'MasonUpdate')
-          end,
-        },
-        {'williamboman/mason-lspconfig.nvim'}, -- Optional
+  -- LSP
+  {'neovim/nvim-lspconfig'},
+  {'williamboman/mason.nvim'},
+  {'williamboman/mason-lspconfig.nvim'},
 
-        -- Autocompletion
-        {'hrsh7th/nvim-cmp'},     -- Required
-        {'hrsh7th/cmp-nvim-lsp'}, -- Required
-        {'L3MON4D3/LuaSnip'},     -- Required
-      }
-    },
-
-
-    -- LSP Stuff using LSPZero which is like sane default quickstart for lsp, cmp, and mason
-    -- { "VonHeikemen/lsp-zero.nvim",
-    --         dependencies = {
-    --             "neovim/nvim-lspconfig",
-    --             "williamboman/mason.nvim",
-    --             "williamboman/mason-lspconfig.nvim",
-    --             "hrsh7th/nvim-cmp",
-    --             "hrsh7th/cmp-buffer",
-    --             "hrsh7th/cmp-path",
-    --             "saadparwaiz1/cmp_luasnip",
-    --             "hrsh7th/cmp-nvim-lsp",
-    --             "hrsh7th/cmp-nvim-lua",
-    --             "L3MON4D3/LuaSnip",
-    --             "rafamadriz/friendly-snippets",
-    --             { "lukas-reineke/lsp-format.nvim", config = true },
-    --     },
-    -- },
-
-    
-  -- Colorschemes --
-  -- Default to gruvbox with the extra settings --
-  {
-	  "morhetz/gruvbox",
-	  lazy = false,
-	  priority = 1,
-	  config = function()
-	  vim.cmd([[colorscheme gruvbox]])
-	end,
-  },
-
-  -- Additional Colorschemes --
-  {"folke/tokyonight.nvim"},
-  {"lunarvim/darkplus.nvim"},	
-  {"Mofiqul/dracula.nvim"},
-  {"lunarvim/colorschemes"},
-
+  -- CMP
+  {'hrsh7th/nvim-cmp'},
+  {'hrsh7th/cmp-buffer'},
+  {'hrsh7th/cmp-path'},
+  {'hrsh7th/cmp-cmdline'},
+  {'hrsh7th/cmp-nvim-lsp'},
+  {'saadparwaiz1/cmp_luasnip'},
+  -- LuaSnip
+  {'L3MON4D3/LuaSnip', dependencies = { "rafamadriz/friendly-snippets" }},
 
 })
