@@ -19,7 +19,7 @@ vim.opt.sidescrolloff = 4           	      -- keep 4 spaces to the left/right
 
 
 -- Testing additional options --
-ignorecase = true                           -- ignore case in search patterns
-showmode = false                            -- get rid of things like "INSERT" because redundant with lualine
-swapfile = false                            -- confusing and scary and annoying
-numberwidth = 4                             -- set number column width to 4
+vim.opt.ignorecase = true                           -- ignore case in search patterns
+vim.opt.showmode = false                            -- get rid of things like "INSERT" because redundant with lualine
+vim.opt.swapfile = false                            -- confusing and scary and annoying
+vim.opt.numberwidth = 4                             -- set number column width to 4
