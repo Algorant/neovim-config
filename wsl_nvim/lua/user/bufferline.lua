@@ -121,7 +121,7 @@ require("bufferline").setup {
     duplicate_selected = {
       fg = { attribute = "fg", highlight = "TabLineSel" },
       bg = { attribute = "bg", highlight = "TabLineSel" },
-      italic = true, 
+      italic = true,
     },
     duplicate_visible = {
       fg = { attribute = "fg", highlight = "TabLine" },

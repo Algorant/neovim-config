@@ -16,11 +16,14 @@ vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappin
 
 require("lazy").setup({
   -- Colorschemes --
-  {"morhetz/gruvbox"},
+  {"sainnhe/gruvbox-material"},
+  {"luisiacc/gruvbox-baby"},
+  {"ellisonleao/gruvbox.nvim" },
+  -- {"morhetz/gruvbox"},
   {"folke/tokyonight.nvim"},
   {"lunarvim/darkplus.nvim"},
   {"Mofiqul/dracula.nvim"},
-  {"lunarvim/colorschemes"},
+  -- {"lunarvim/colorschemes"},
 
   -- Simple Plugins --
   "windwp/nvim-autopairs",
