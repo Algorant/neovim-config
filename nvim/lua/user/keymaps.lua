@@ -19,6 +19,7 @@ vim.g.maplocalleader = " "
 keymap("n", "<Enter>", "o<ESC>", opts)
 keymap("n", "<S-Enter>", "O<ESC>", opts)
 
+
 -- Modes
 --    normal_mode = "n"
 --    insert_mode = "i"
@@ -28,35 +29,22 @@ keymap("n", "<S-Enter>", "O<ESC>", opts)
 --    command_mode = "c"
 
 -- Normal Mode
+
 -- Better Window Navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- Buffer Navigation
-keymap("n", "<S-l>", ":bnext<CR>", opts)
-keymap("n", "<S-h>", ":bprevious<CR>", opts)
-
--- Move text up and down
-keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
-keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
-
--- Open File Explorer
+-- Controls for NvimTree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
--- Save with Leader way
-keymap("n", "<leader>w", ":w<CR>", opts)
--- Resize with Arrows
-keymap("n", "<C-Up>", ":resize +2<CR>", opts)
-keymap("n", "<C-Down>", ":resize -2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
-
 -- Telescope
-keymap("n", "<leader>f", ":Telescope find_files hidden=true<CR>", opts)
-keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+-- Telescope
+keymap("n", "<leader>ff", ":Telescope find_files hidden=true<CR>", opts)
+keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
 
---Copilot use ctrl+Space to trigger copilot accept
-keymap("i", 'C-Space', "copilot#Accept<CR>", opts)
--- let g:copilot_no_tab_map = v:true
+-- Buffers
+keymap("n", "<leader>q", ":bd <CR>", opts) --exit buffer
+keymap("n", "<S-l>", ":bnext<CR>", opts) -- next buffer (aka tab)
+keymap("n", "<S-h>", ":bprevious<CR>", opts) -- previous buffer (aka tab)
