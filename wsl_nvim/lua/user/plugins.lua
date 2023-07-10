@@ -19,11 +19,9 @@ require("lazy").setup({
   {"sainnhe/gruvbox-material"},
   {"luisiacc/gruvbox-baby"},
   {"ellisonleao/gruvbox.nvim" },
-  -- {"morhetz/gruvbox"},
   {"folke/tokyonight.nvim"},
   {"lunarvim/darkplus.nvim"},
   {"Mofiqul/dracula.nvim"},
-  -- {"lunarvim/colorschemes"},
 
   -- Simple Plugins --
   "windwp/nvim-autopairs",
